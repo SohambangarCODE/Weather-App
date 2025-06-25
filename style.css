@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #FFC107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    background: linear-gradient(to right, #FFE082 0%, #FFD180 50%, #FFAB91 100%);
+}
+.container{
+    display: flex;
+    flex-direction: column; /* Stack on mobile */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #FADA7A;
+    height: 80vh;
+    width: 60vh;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 10px 30px 25px rgba(0, 0, 0, 0.15), 0 6px 8px rgba(0, 0, 0, 0.05);
+}
+.container h1{
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.container input{
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    margin-bottom: 2rem;
+    border: none;
+}
+.btn{
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: #9e2a2b;
+    border: none;
+    border-radius: 1.5rem;
+}
+.btn:hover{
+    background-color: #FFA673;
+}
+#weather-info {
+    display: none;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+#description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#wind-speed {
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+}
+#date {
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+}
+h3{
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+}
+
+/* ✅ For small-width screens (phones) */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .container input {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  #temperature {
+    font-size: 20px;
+  }
+
+  #description {
+    font-size: 16px;
+  }
+
+  #wind-speed,
+  #date {
+    font-size: 13px;
+  }
+}
+
+/* ✅ For medium-width screens (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    width: 70vw;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .container h1 {
+    font-size: 2.5rem;
+  }
+
+  .container input {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ✅ For short height screens (e.g. landscape phones) */
+@media (max-height: 500px) {
+  .container {
+    height: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .container h1 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .container input {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  #weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  #temperature {
+    font-size: 20px;
+  }
+}

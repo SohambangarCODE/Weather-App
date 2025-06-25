@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="input">
+            <input class="city-input" type="text" placeholder="Enter city name">
+        </div>
+        <button class="btn">Get Weather</button>
+        <div id="weather-info">
+            <h3 id="city-name"></h3>
+            <p id="date"></p>
+            <img id="weather-icon" src="" alt="weather icon">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="wind-speed"></p>
+        </div>
+    </div>
+    <script src=
+"https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src=
+"https://momentjs.com/downloads/moment.min.js">
+	</script>
+    <script src="script.js"></script>
+</body>
+</html>
